@@ -1,4 +1,5 @@
 {
+  "originHash" : "f0fb50493180b76f9c3b51451b580a38a2cd73e7dd871f8838377b54e1e2aeaf",
   "pins" : [
     {
       "identity" : "chatui",
@@ -6,7 +7,7 @@
       "location" : "https://github.com/jaesung-0o0/ChatUI",
       "state" : {
         "branch" : "main",
-        "revision" : "17cb9320e0614475aa7213e2db6de7a061ce229b"
+        "revision" : "4835743e8f895f84c7218fd9216c044f0ee4a89f"
       }
     },
     {
@@ -14,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Giphy/giphy-ios-sdk",
       "state" : {
-        "revision" : "699483a3a2b534e9dc3a3ab85a9f7095e306bde1",
-        "version" : "2.2.2"
+        "revision" : "37f5b1ff6cf8bc4a78c0bc5eb1b814381bac9580",
+        "version" : "2.2.16"
       }
     },
     {
@@ -23,10 +24,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/SDWebImage/libwebp-Xcode",
       "state" : {
-        "revision" : "4f52fc9b29600a03de6e05af16df0d694cb44301",
-        "version" : "1.2.4"
+        "revision" : "0d60654eeefd5d7d2bef3835804892c40225e8b2",
+        "version" : "1.5.0"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

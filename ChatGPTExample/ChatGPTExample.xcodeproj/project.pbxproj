@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03B85CA32E639ACB007A4A1D /* ChatUI in Frameworks */ = {isa = PBXBuildFile; productRef = 03B85CA22E639ACB007A4A1D /* ChatUI */; };
+		03B85CA52E639FE8007A4A1D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B85CA42E639FE8007A4A1D /* NetworkManager.swift */; };
+		03B85CA72E639FFE007A4A1D /* SSEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B85CA62E639FFE007A4A1D /* SSEManager.swift */; };
 		A92CE9DB29C0C1320091B6E3 /* GPTMessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92CE9DA29C0C1320091B6E3 /* GPTMessageRow.swift */; };
 		A95251BD299E5B8400DA07EC /* ChatGPTExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95251BC299E5B8400DA07EC /* ChatGPTExampleApp.swift */; };
 		A95251BF299E5B8400DA07EC /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95251BE299E5B8400DA07EC /* ChatView.swift */; };
 		A95251C1299E5B8500DA07EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95251C0299E5B8500DA07EC /* Assets.xcassets */; };
 		A95251C4299E5B8500DA07EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95251C3299E5B8500DA07EC /* Preview Assets.xcassets */; };
-		A988391029AA188F00507EFB /* ChatUI in Frameworks */ = {isa = PBXBuildFile; productRef = A988390F29AA188F00507EFB /* ChatUI */; };
 		A9FF316A29A3CDE7008328B9 /* ChatGPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF316929A3CDE7008328B9 /* ChatGPT.swift */; };
 		A9FF316F29A3D1E4008328B9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF316E29A3D1E4008328B9 /* User.swift */; };
 		A9FF317129A3D1FC008328B9 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9FF317029A3D1FC008328B9 /* Message.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03B85CA42E639FE8007A4A1D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		03B85CA62E639FFE007A4A1D /* SSEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSEManager.swift; sourceTree = "<group>"; };
+		03B85CC22E63A067007A4A1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A92CE9DA29C0C1320091B6E3 /* GPTMessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTMessageRow.swift; sourceTree = "<group>"; };
 		A95251B9299E5B8400DA07EC /* ChatGPTExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A95251BC299E5B8400DA07EC /* ChatGPTExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTExampleApp.swift; sourceTree = "<group>"; };
@@ -35,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A988391029AA188F00507EFB /* ChatUI in Frameworks */,
+				03B85CA32E639ACB007A4A1D /* ChatUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +67,7 @@
 		A95251BB299E5B8400DA07EC /* ChatGPTExample */ = {
 			isa = PBXGroup;
 			children = (
+				03B85CC22E63A067007A4A1D /* Info.plist */,
 				A95251BC299E5B8400DA07EC /* ChatGPTExampleApp.swift */,
 				A9FF317329A3DA5A008328B9 /* View */,
 				A9FF317229A3DA55008328B9 /* DataModel */,
@@ -101,6 +107,8 @@
 			children = (
 				A95251BE299E5B8400DA07EC /* ChatView.swift */,
 				A92CE9DA29C0C1320091B6E3 /* GPTMessageRow.swift */,
+				03B85CA42E639FE8007A4A1D /* NetworkManager.swift */,
+				03B85CA62E639FFE007A4A1D /* SSEManager.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,7 +130,7 @@
 			);
 			name = ChatGPTExample;
 			packageProductDependencies = (
-				A988390F29AA188F00507EFB /* ChatUI */,
+				03B85CA22E639ACB007A4A1D /* ChatUI */,
 			);
 			productName = ChatGPTExample;
 			productReference = A95251B9299E5B8400DA07EC /* ChatGPTExample.app */;
@@ -153,7 +161,7 @@
 			);
 			mainGroup = A95251B0299E5B8400DA07EC;
 			packageReferences = (
-				A988390E29AA188F00507EFB /* XCRemoteSwiftPackageReference "ChatUI" */,
+				03B85CA12E639ACB007A4A1D /* XCRemoteSwiftPackageReference "ChatUI" */,
 			);
 			productRefGroup = A95251BA299E5B8400DA07EC /* Products */;
 			projectDirPath = "";
@@ -182,8 +190,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A92CE9DB29C0C1320091B6E3 /* GPTMessageRow.swift in Sources */,
+				03B85CA72E639FFE007A4A1D /* SSEManager.swift in Sources */,
 				A9FF316F29A3D1E4008328B9 /* User.swift in Sources */,
 				A95251BF299E5B8400DA07EC /* ChatView.swift in Sources */,
+				03B85CA52E639FE8007A4A1D /* NetworkManager.swift in Sources */,
 				A9FF317129A3D1FC008328B9 /* Message.swift in Sources */,
 				A95251BD299E5B8400DA07EC /* ChatGPTExampleApp.swift in Sources */,
 				A9FF316A29A3CDE7008328B9 /* ChatGPT.swift in Sources */,
@@ -315,9 +325,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGPTExample/Preview Content\"";
-				DEVELOPMENT_TEAM = 77CD4KLN3Y;
+				DEVELOPMENT_TEAM = TSD665VM7T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatGPTExample/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "ChatUI & ChatGPT";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -346,9 +357,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ChatGPTExample/Preview Content\"";
-				DEVELOPMENT_TEAM = 77CD4KLN3Y;
+				DEVELOPMENT_TEAM = TSD665VM7T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChatGPTExample/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "ChatUI & ChatGPT";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -393,7 +405,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A988390E29AA188F00507EFB /* XCRemoteSwiftPackageReference "ChatUI" */ = {
+		03B85CA12E639ACB007A4A1D /* XCRemoteSwiftPackageReference "ChatUI" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jaesung-0o0/ChatUI";
 			requirement = {
@@ -404,9 +416,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A988390F29AA188F00507EFB /* ChatUI */ = {
+		03B85CA22E639ACB007A4A1D /* ChatUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A988390E29AA188F00507EFB /* XCRemoteSwiftPackageReference "ChatUI" */;
+			package = 03B85CA12E639ACB007A4A1D /* XCRemoteSwiftPackageReference "ChatUI" */;
 			productName = ChatUI;
 		};
 /* End XCSwiftPackageProductDependency section */
